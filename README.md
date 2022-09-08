@@ -1,10 +1,29 @@
 # AngularLearning
 
-## Anotações - Aula 3
+## Anotações - Aula 4
 
-Entendendo o que é criado após um `ng new` (comando usado para criar o projeto angular):
+Criando componentes:
 
-- **node_modules:** dependências do projeto;
-- **src:** onde é possível programar a aplicação;
-- **src/app:** pasta principal para componentes, services, etc;
-- Os **componentes** são divididos em partes: _TS_, _HTML_, _CSS_ e _Testes_.
+- É possível utilizar a CLI para criar componentes;
+- O comando para criar é `ng generate component <nome>`;
+- Todos os arquivos necessário serão criados no projeto;
+- Para importar o componente basta utilizar o seu _selector_ em um HTML de outro componente.
+
+obs** Ao criar um novo componente pela CLI, além de ser criado os arquivos padrão do próprio componente em sua respectiva pasta, é também atualizado o arquivo **app.module.ts\*\* no qual é feita a importação do novo componente e exposto o mesmo na variácel declarations do _@NgModule_:
+
+```
+import { NovoComponente } from './components/novo-componente/novo-componente.component';
+
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    NovoComponente
+  ],
+  imports: [
+    BrowserModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+```
