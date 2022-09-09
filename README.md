@@ -1,8 +1,8 @@
 # AngularLearning
 
-## Anotações - Aula 6
+## Anotações - Aula 7
 
-CSS no angular. Os estidos em aplicações angular podem ser feitos de duas maneiras:
+Compartilhamento de dados. No angular podemos compartilhar dados do componente pai com o componente filho:
 
-- **Global:** utilizando o arquivo styles.css, que fica em src;
-- **Scoped:** estilos a nível de componente.
+- Para compartilhar, vamos disponibilizar na chamada do componente o nome do dado que será recebido com a seguinte sintaxe: `[dado]`;
+- E no código _.ts_ do componente filho vamos utilizar o decorator `@Input`, que tem como papel entregar o dado para o template.
