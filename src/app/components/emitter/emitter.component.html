@@ -1,0 +1,6 @@
+<div class="class">
+  <h1>O número é: {{number}}</h1>
+  <h2 *ngIf="data">Nome: {{data.name}}</h2>
+  <h2 *ngIf="data">Idade: {{data.age}}</h2>
+  <app-change-number (changeNumber)="onChangeNumber()" (sendData)="onSendData($event)"></app-change-number>
+</div>

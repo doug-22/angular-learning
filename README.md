@@ -1,10 +1,11 @@
 # AngularLearning
 
-## Anotações - Aula 10
+## Anotações - Aula 11
 
-Eventos
+Emitindo eventos
 
-- Um evento clássico que utilizamos muito é o _click_;
-- A sintaxe é `(click)="algumaFuncao()"`;
+- Comunicando eventos de um componente filho para o pai;
+- É necessário usar o `@Output`, que vai fazer a saída do eventro do componente filho;
+- Na tag de invocação do componente no template, escolhemos um método para executar quando o evento for emitido;
 
-- Os métodos ficam na classe.
+Exemplo: `(emit)="onEmit()"`.
