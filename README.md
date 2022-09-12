@@ -1,8 +1,9 @@
 # AngularLearning
 
-## Anotações - Aula 12
+## Anotações - Aula 13
 
-Renderização de listas
+Importância das intarfaces
 
-- No template do componente vai ser utilizado p `*ngFor`;
-- A sintaxe é: `*ngFor="let item of items"`.
+- Toda entidade que vamos trabalhar precisa de uma interface;
+- Isso vai tornar o código mais simples ao longo da evolução;
+- Padronizando ele e facilitando a manutençã.
