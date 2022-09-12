@@ -1,22 +1,10 @@
 # AngularLearning
 
-## Anotações - Aula 9
+## Anotações - Aula 10
 
-Diretivas - Renderização Condicional
+Eventos
 
-- Podem realizar diversas funções no sistema, como aplicar estilos a um elemento;
-- Elas começam sempre com `ng`, ou seja, o nofe fica como `ngAlgumaCoisa`.
+- Um evento clássico que utilizamos muito é o _click_;
+- A sintaxe é `(click)="algumaFuncao()"`;
 
-Exemplos:
-
-`[ngStyle]`: para alterações no estilo;
-
-`[ngClass]`: para alterações de classes;
-
-`[ngIf]`: para redenrização condicional:
-
-```
-- usa-se apenas 'ngIf' quando se tem uma verificação simples 'true' ou 'false';
-
-- quando houver a necessidade de ter um 'else', é necessário indicar o que será renderizado com a tag 'ng-template'
-```
+- Os métodos ficam na classe.
