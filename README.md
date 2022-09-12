@@ -1,8 +1,12 @@
 # AngularLearning
 
-## Anotações - Aula 7
+## Anotações - Aula 8
 
-Compartilhamento de dados. No angular podemos compartilhar dados do componente pai com o componente filho:
+Diretivas
 
-- Para compartilhar, vamos disponibilizar na chamada do componente o nome do dado que será recebido com a seguinte sintaxe: `[dado]`;
-- E no código _.ts_ do componente filho vamos utilizar o decorator `@Input`, que tem como papel entregar o dado para o template.
+- Podem realizar diversas funções no sistema, como aplicar estilos a um elemento;
+- Elas começam sempre com `ng`, ou seja, o nofe fica como `ngAlgumaCoisa`.
+
+Exemplos:
+`[ngStyle]`: para alterações no estilo;
+`[ngClass]`: para alterações de classes;
