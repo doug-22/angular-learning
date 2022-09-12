@@ -1,11 +1,8 @@
 # AngularLearning
 
-## Anotações - Aula 11
+## Anotações - Aula 12
 
-Emitindo eventos
+Renderização de listas
 
-- Comunicando eventos de um componente filho para o pai;
-- É necessário usar o `@Output`, que vai fazer a saída do eventro do componente filho;
-- Na tag de invocação do componente no template, escolhemos um método para executar quando o evento for emitido;
-
-Exemplo: `(emit)="onEmit()"`.
+- No template do componente vai ser utilizado p `*ngFor`;
+- A sintaxe é: `*ngFor="let item of items"`.
