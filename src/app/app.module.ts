@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { FirstComponentComponent } from './components/first-component/first-component.component';
@@ -13,6 +14,7 @@ import { ChangeNumberComponent } from './components/change-number/change-number.
 import { ListRenderComponent } from './components/list-render/list-render.component';
 import { PipesComponent } from './components/pipes/pipes.component';
 import { ExponentialPipe } from './customPipes/exponential.pipe';
+import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
 
 @NgModule({
   declarations: [
@@ -28,9 +30,11 @@ import { ExponentialPipe } from './customPipes/exponential.pipe';
     ListRenderComponent,
     PipesComponent,
     ExponentialPipe,
+    TwoWayBindingComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

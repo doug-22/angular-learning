@@ -1,12 +1,10 @@
 # AngularLearning
 
-## Anotações - Aula 14
+## Anotações - Aula 15
 
-Pipe operators
+Two way data binding
 
-- Os **pipe operators** são recursos para trabalhar com strings nos templates;
-- É possível realizar diversas funções, como por exemplo deixar um texto em caixa alta;
-- A sintaxe é: `{{ dado | algumPipeOperator }}`;
-- Dessa forma, é possível poupar de regras de CSS ou manipulação de strings com JS.
-
-obs\* é possível criar Pipes com `ng generate pipe`
+- O **Two way data binding** é um recurso muito interessante para trabalhar com formulários;
+- Basicamente conseguimos alterar props e o template com o preenchimento de inputs;
+- É necessário importar o `FormsModule` no componente principal;
+- E também declarar o `ngModel` no input, além de preencher também o atributo name, todos com o mesmo valor.
