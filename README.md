@@ -1,10 +1,9 @@
 # AngularLearning
 
-## Anotações - Aula 15
+## Anotações - Aula 16
 
-Two way data binding
+Services
 
-- O **Two way data binding** é um recurso muito interessante para trabalhar com formulários;
-- Basicamente conseguimos alterar props e o template com o preenchimento de inputs;
-- É necessário importar o `FormsModule` no componente principal;
-- E também declarar o `ngModel` no input, além de preencher também o atributo name, todos com o mesmo valor.
+- O **Service** é uma parte importante da arquitetura do angular, geralmente é onde ficam as requisições para APIs;
+- Para criar basta: `ng generate service <nome>`;
+- Importar no componente e iniciar no constructor.
