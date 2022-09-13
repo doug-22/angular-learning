@@ -1,9 +1,10 @@
 # AngularLearning
 
-## Anotações - Aula 16
+## Anotações - Aula 17
 
-Services
+Angular router
 
-- O **Service** é uma parte importante da arquitetura do angular, geralmente é onde ficam as requisições para APIs;
-- Para criar basta: `ng generate service <nome>`;
-- Importar no componente e iniciar no constructor.
+- Criar um novo arquivo para declarar nossas rotas, onde vai ser importado os módulos `RouterModule` e `Routes`;
+- Após definição estas rotas precisam ser importadas em _app.module.ts_
+- No template principal criamos as rotas;
+  E subistituímos os componentes por: `<router-outlet>`
