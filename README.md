@@ -1,9 +1,12 @@
 # AngularLearning
 
-## Anotações - Aula 13
+## Anotações - Aula 14
 
-Importância das intarfaces
+Pipe operators
 
-- Toda entidade que vamos trabalhar precisa de uma interface;
-- Isso vai tornar o código mais simples ao longo da evolução;
-- Padronizando ele e facilitando a manutençã.
+- Os **pipe operators** são recursos para trabalhar com strings nos templates;
+- É possível realizar diversas funções, como por exemplo deixar um texto em caixa alta;
+- A sintaxe é: `{{ dado | algumPipeOperator }}`;
+- Dessa forma, é possível poupar de regras de CSS ou manipulação de strings com JS.
+
+obs\* é possível criar Pipes com `ng generate pipe`
