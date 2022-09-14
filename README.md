@@ -1,10 +1,8 @@
 # AngularLearning
 
-## Anotações - Aula 17
+## Anotações - Aula 18
 
-Angular router
+Requisições HTTP
 
-- Criar um novo arquivo para declarar nossas rotas, onde vai ser importado os módulos `RouterModule` e `Routes`;
-- Após definição estas rotas precisam ser importadas em _app.module.ts_
-- No template principal criamos as rotas;
-  E subistituímos os componentes por: `<router-outlet>`
+- Para fazer requisições precisamos importar dois pacotes: `HttpClient` e `HttpHeaders`;
+- Por último, é necessário inicializar o módulo `HttpClientModule` em _app.module.ts_.
