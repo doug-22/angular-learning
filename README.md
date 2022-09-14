@@ -1,8 +1,9 @@
 # AngularLearning
 
-## Anotações - Aula 18
+## Anotações - Aula 19
 
-Requisições HTTP
+Carregando dado individual
 
-- Para fazer requisições precisamos importar dois pacotes: `HttpClient` e `HttpHeaders`;
-- Por último, é necessário inicializar o módulo `HttpClientModule` em _app.module.ts_.
+- Para resgatar um dado do banco vamos precisar criar uma **rota dinâmica** no nosso router;
+- Baseado no id do item teremos a seleção de dado do banco, geralmente o id vem pela URL;
+- Para resgatar parâmetros da URL vamos utilizar o `ActivatedRoute`, um módulo de Angular.
