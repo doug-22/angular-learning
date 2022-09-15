@@ -1,5 +1,5 @@
 # AngularLearning
 
-## Anotações - Aula 20
+## Anotações - NGRX
 
-Deletando registro: refatorar o código para remover um registro com a execução HTTP.
+Gerenciamento de Estados com NGRX

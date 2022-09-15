@@ -18,6 +18,13 @@ import { PipesComponent } from './components/pipes/pipes.component';
 import { ExponentialPipe } from './customPipes/exponential.pipe';
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
 import { ItemDetailComponent } from './components/item-detail/item-detail.component';
+import { GerenciarEstadoComponent } from './components/gerenciar-estado/gerenciar-estado.component';
+import { ChildComponent } from './components/gerenciar-estado/child/child.component';
+import { StoreModule } from '@ngrx/store';
+import { appReducer } from './store/app.state';
+import { ChildReducerComponent } from './components/gerenciar-estado/child-reducer/child-reducer.component';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -35,12 +42,18 @@ import { ItemDetailComponent } from './components/item-detail/item-detail.compon
     ExponentialPipe,
     TwoWayBindingComponent,
     ItemDetailComponent,
+    GerenciarEstadoComponent,
+    ChildComponent,
+    ChildReducerComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    //adiciona o reducer para ser acessado pela aplicação
+    StoreModule.forRoot({ app: appReducer }, {}),
+    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]

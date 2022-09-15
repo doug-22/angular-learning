@@ -10,6 +10,7 @@ import { EmitterComponent } from "./components/emitter/emitter.component";
 import { PipesComponent } from "./components/pipes/pipes.component";
 import { TwoWayBindingComponent } from "./components/two-way-binding/two-way-binding.component";
 import { ItemDetailComponent } from "./components/item-detail/item-detail.component";
+import { GerenciarEstadoComponent } from "./components/gerenciar-estado/gerenciar-estado.component";
 
 const routes: Routes = [
   {path: '', component: FirstComponentComponent},
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path: 'lista/:id', component: ItemDetailComponent},
   {path: 'pipe', component: PipesComponent},
   {path: 'two-way', component: TwoWayBindingComponent},
+  {path: 'gerenciar-estados', component: GerenciarEstadoComponent}
 ]
 
 @NgModule({
